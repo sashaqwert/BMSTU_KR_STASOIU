@@ -6,4 +6,5 @@
 # Карта
 
 Текущая версия: https://sashaqwert.github.io/BMSTU_KR_STASOIU
+
 Для редактирования изменить ```index.html``` [здесь](https://github.com/sashaqwert/BMSTU_KR_STASOIU/tree/gh-pages)
