@@ -39,36 +39,31 @@
             // 
             // incomePortBox
             // 
-            this.incomePortBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.incomePortBox, "incomePortBox");
-            this.incomePortBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.incomePortBox.FormattingEnabled = true;
+            resources.ApplyResources(this.incomePortBox, "incomePortBox");
             this.incomePortBox.Name = "incomePortBox";
             // 
             // outcomePortBox
             // 
-            this.outcomePortBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.outcomePortBox, "outcomePortBox");
-            this.outcomePortBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.outcomePortBox.FormattingEnabled = true;
+            resources.ApplyResources(this.outcomePortBox, "outcomePortBox");
             this.outcomePortBox.Name = "outcomePortBox";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.Name = "label1";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Name = "label2";
             // 
             // connectButton
             // 
-            this.connectButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.connectButton.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.connectButton, "connectButton");
             this.connectButton.Name = "connectButton";
             this.connectButton.UseVisualStyleBackColor = false;
@@ -77,7 +72,6 @@
             // checkBox
             // 
             resources.ApplyResources(this.checkBox, "checkBox");
-            this.checkBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.checkBox.Name = "checkBox";
             this.checkBox.UseVisualStyleBackColor = true;
             // 
