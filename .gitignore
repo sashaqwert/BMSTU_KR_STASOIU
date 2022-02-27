@@ -1,2 +1,4 @@
 # Notepad++ backup files
 *.bak
+# MS Office and MindManager temp files
+~$*
