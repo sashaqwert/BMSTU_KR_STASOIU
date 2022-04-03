@@ -14,7 +14,8 @@ namespace WahChat
     {
         public Label notificationLabel;
         public Button connectButton;
-        public ListBox chatBox;
+        public ListBox chatBox; //Отправленные со станции сообщения
+        public ListBox chatInBox; //Поступившие на станцию сообщения от других станций
 
         private NetworkService()
         {
@@ -99,11 +100,17 @@ namespace WahChat
 
                 case Frame.Type.Data:
 
+                    //TODO: разделить сообщения на chatBox и chatInBox
                     this.chatBox.Invoke((MethodInvoker)delegate {
 
                         // Running on the UI thread
                         this.chatBox.Items.Add(string.Format("{0} ({1}) {2}", DateTime.Now.ToString("hh:mm"), frame.authorID, frame.message));
                     });
+                    //this.chatInBox.Invoke((MethodInvoker)delegate {
+
+                    //    // Running on the UI thread
+                    //    this.chatInBox.Items.Add(string.Format("{0} ({1}) {2}", DateTime.Now.ToString("hh:mm"), frame.authorID, frame.message));
+                    //});
 
                     // Если станция не ялвяется отправителем, то отправляем дальше
                     if (currentSession.username != frame.authorID)

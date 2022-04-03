@@ -34,5 +34,10 @@ namespace WahChat
         {
             NetworkService.GetSharedService().CloseConnection();
         }
+
+        private void Chat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

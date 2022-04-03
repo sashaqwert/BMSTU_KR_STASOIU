@@ -124,6 +124,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Chat";
             this.Text = "Чат";
+            this.Load += new System.EventHandler(this.Chat_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
