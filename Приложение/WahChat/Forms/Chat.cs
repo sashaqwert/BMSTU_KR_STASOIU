@@ -16,10 +16,12 @@ namespace WahChat
         {
             InitializeComponent();
 
-            NetworkService.GetSharedService().chatBox = this.chatBox;
+            NetworkService.GetSharedService().chatBox = this.chatBox; //Отправленные
+            NetworkService.GetSharedService().chatInBox = this.chatInbox; //Входящие
 
             this.usernameLabel.Text = String.Format("Подключен как \"{0}\"", NetworkService.GetSharedService().currentSession.username);
             this.chatBox.SelectionMode = SelectionMode.None;
+            this.chatInbox.SelectionMode = SelectionMode.None;
         }
 
         private void SendButton_Click(object sender, EventArgs e)

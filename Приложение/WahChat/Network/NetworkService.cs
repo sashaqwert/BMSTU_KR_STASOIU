@@ -15,7 +15,7 @@ namespace WahChat
         public Label notificationLabel;
         public Button connectButton;
         public ListBox chatBox; //Отправленные со станции сообщения
-        //public ListBox chatInBox; //Поступившие на станцию сообщения от других станций
+        public ListBox chatInBox; //Поступившие на станцию сообщения от других станций
 
         private NetworkService()
         {
