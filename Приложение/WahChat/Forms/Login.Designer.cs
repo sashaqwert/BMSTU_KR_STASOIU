@@ -40,7 +40,7 @@
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.85F);
             this.loginButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.loginButton.Location = new System.Drawing.Point(22, 112);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(296, 35);
             this.loginButton.TabIndex = 5;
@@ -53,7 +53,7 @@
             this.textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.85F, System.Drawing.FontStyle.Bold);
             this.textBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox.Location = new System.Drawing.Point(22, 68);
-            this.textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox.Margin = new System.Windows.Forms.Padding(2);
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(298, 24);
             this.textBox.TabIndex = 6;
@@ -62,13 +62,12 @@
             // 
             this.notificationLabel.AutoSize = true;
             this.notificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.notificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.notificationLabel.Location = new System.Drawing.Point(26, 186);
             this.notificationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.notificationLabel.Name = "notificationLabel";
-            this.notificationLabel.Size = new System.Drawing.Size(13, 20);
+            this.notificationLabel.Size = new System.Drawing.Size(152, 20);
             this.notificationLabel.TabIndex = 7;
-            this.notificationLabel.Text = " ";
+            this.notificationLabel.Text = " пример состояния";
             // 
             // label1
             // 
@@ -90,9 +89,10 @@
             this.Controls.Add(this.notificationLabel);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.loginButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Авторизация";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

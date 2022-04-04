@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,8 +52,15 @@ namespace WahChat
             this.outcomePort.BaudRate = 9600;
 
             // Открываем порты.
-            this.incomePort.Open();
-            this.outcomePort.Open();
+            try
+            {
+                this.incomePort.Open();
+                this.outcomePort.Open();
+            } catch (Exception ex)
+            {
+                //Здесь должна быть ошибка невозможности использовать COM-порты
+                throw ex;
+            }
 
             return (this.incomePort.IsOpen && this.outcomePort.IsOpen);
         }

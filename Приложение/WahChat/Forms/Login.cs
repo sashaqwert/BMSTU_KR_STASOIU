@@ -46,5 +46,10 @@ namespace WahChat
             Chat chatForm = new Chat();
             chatForm.Show();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
