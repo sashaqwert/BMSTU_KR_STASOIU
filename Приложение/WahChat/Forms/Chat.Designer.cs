@@ -34,6 +34,7 @@
             this.closeButton = new System.Windows.Forms.Button();
             this.chatBox = new System.Windows.Forms.ListBox();
             this.chatInbox = new System.Windows.Forms.ListBox();
+            this.button_about = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -110,11 +111,22 @@
             this.chatInbox.Size = new System.Drawing.Size(184, 191);
             this.chatInbox.TabIndex = 15;
             // 
+            // button_about
+            // 
+            this.button_about.Location = new System.Drawing.Point(320, 42);
+            this.button_about.Name = "button_about";
+            this.button_about.Size = new System.Drawing.Size(140, 23);
+            this.button_about.TabIndex = 16;
+            this.button_about.Text = "О программе";
+            this.button_about.UseVisualStyleBackColor = true;
+            this.button_about.Click += new System.EventHandler(this.button_about_Click);
+            // 
             // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 335);
+            this.Controls.Add(this.button_about);
             this.Controls.Add(this.chatInbox);
             this.Controls.Add(this.chatBox);
             this.Controls.Add(this.closeButton);
@@ -138,5 +150,6 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.ListBox chatBox;
         private System.Windows.Forms.ListBox chatInbox;
+        private System.Windows.Forms.Button button_about;
     }
 }

@@ -41,5 +41,10 @@ namespace WahChat
         {
 
         }
+
+        private void button_about_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Выполнена в рамках курса \"Сетеввые технологии в АСОИУ\"\nИсполнители:\tКрротенко Е.А. ИУ5Ц-81Б\n\t\tПылаев Б.А. ИУ5Ц-82Б\n\t\tЧиварзин А.Е. ИУ5Ц-82Б\nПреподаватель:\tГалкин В.А.", "Разработка");
+        }
     }
 }
