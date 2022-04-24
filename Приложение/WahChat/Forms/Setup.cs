@@ -26,6 +26,12 @@ namespace WahChat
                 incomePortBox.Items.Add(portName);
                 outcomePortBox.Items.Add(portName);
             }
+
+            //Добавим список скоростей COM-портов
+            box_speed1.Items.Clear();
+            box_speed2.Items.Clear();
+            box_speed1.Items.Add(21600);
+            box_speed2.Items.Add(21600);
         }
 
         private void connectButton_Click(object sender, EventArgs e)
