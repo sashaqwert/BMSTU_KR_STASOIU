@@ -37,7 +37,6 @@
             // loginButton
             // 
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.85F);
             this.loginButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.loginButton.Location = new System.Drawing.Point(22, 112);
             this.loginButton.Margin = new System.Windows.Forms.Padding(2);
