@@ -71,6 +71,7 @@
     <Compile Include="Forms\Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Messages\Message.cs" />
     <Compile Include="Network\Connection.cs" />
     <Compile Include="Network\CycleCoder.cs" />
     <Compile Include="Network\NetworkService.cs" />
