@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace WahChat.Messages
 {
-    public class Message
+    public class ChatMessage
     {
         public string msgTime;
         public int authorID;
         public string msgText;
 
-        public Message(string time, int author, string msg)
+        public ChatMessage(string time, int author, string msg)
         {
             this.msgTime = time;
             this.authorID = author;
             this.msgText = msg;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0} ({1}) {2}", this.msgTime, this.authorID, this.msgText);
         }
     }
 }

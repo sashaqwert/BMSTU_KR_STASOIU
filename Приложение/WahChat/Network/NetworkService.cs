@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WahChat.Messages;
 
 namespace WahChat
 {
@@ -100,17 +101,23 @@ namespace WahChat
 
                 case Frame.Type.Data:
 
-                    //TODO: разделить сообщения на chatBox и chatInBox
-                    this.chatBox.Invoke((MethodInvoker)delegate {
+                    ChatMessage msg = new ChatMessage(DateTime.Now.ToString("hh:mm"), frame.authorID, frame.message);
+                    // Сравниваем ID сессии и автора сообщения. В зависимости от него помещаем сообщение во входящие или отправленные.
+                    if (NetworkService.GetSharedService().currentSession.username == msg.authorID)
+                    {
+                        this.chatBox.Invoke((MethodInvoker)delegate {
 
-                        // Running on the UI thread
-                        this.chatBox.Items.Add(string.Format("{0} ({1}) {2}", DateTime.Now.ToString("hh:mm"), frame.authorID, frame.message));
-                    });
-                    //this.chatInBox.Invoke((MethodInvoker)delegate {
+                            // Running on the UI thread
+                            this.chatBox.Items.Add(msg.ToString());
+                        });
+                    } else
+                    {
+                        this.chatInBox.Invoke((MethodInvoker)delegate {
 
-                    //    // Running on the UI thread
-                    //    this.chatInBox.Items.Add(string.Format("{0} ({1}) {2}", DateTime.Now.ToString("hh:mm"), frame.authorID, frame.message));
-                    //});
+                            // Running on the UI thread
+                            this.chatInBox.Items.Add(msg.ToString());
+                        });
+                    }
 
                     // Если станция не ялвяется отправителем, то отправляем дальше
                     if (currentSession.username != frame.authorID)
