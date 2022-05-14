@@ -91,6 +91,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.chatBox.FormattingEnabled = true;
+            this.chatBox.HorizontalScrollbar = true;
             this.chatBox.ItemHeight = 17;
             this.chatBox.Location = new System.Drawing.Point(199, 72);
             this.chatBox.Margin = new System.Windows.Forms.Padding(2);
@@ -104,6 +105,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.chatInbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.chatInbox.FormattingEnabled = true;
+            this.chatInbox.HorizontalScrollbar = true;
             this.chatInbox.ItemHeight = 17;
             this.chatInbox.Location = new System.Drawing.Point(3, 72);
             this.chatInbox.Margin = new System.Windows.Forms.Padding(2);
