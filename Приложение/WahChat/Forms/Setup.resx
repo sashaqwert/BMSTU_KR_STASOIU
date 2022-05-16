@@ -297,6 +297,9 @@
   <data name="box_speed1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="box_speed1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;box_speed1.Name" xml:space="preserve">
     <value>box_speed1</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="box_speed2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="box_speed2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;box_speed2.Name" xml:space="preserve">
     <value>box_speed2</value>
@@ -371,6 +377,9 @@
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Скорость передачи</value>
+  </data>
+  <data name="label4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
